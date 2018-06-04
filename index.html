@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Gold Igloo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- chart.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+          <i class="fa fa-times"></i>
+        </a>
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="index.html">Gold Igloo</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#top">Home</a>
+        </li>
+        <li>
+          <a  href="#what-is-gold-igloo">How we can help you?</a>
+        </li>
+        <li>
+          <a  href="#categories">The Investing Horizon</a>
+        </li>
+        <li>
+          <a href="#contact" onclick=$( "#menu-close").click();>Contact</a>
+        </li>
+         <li>
+          <a  href="about-us-page.html">About Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header someDivOverlay" id="top">
+      <div class="text-vertical-center">
+        <h1 style="color:black">Gold Igloo</h1>
+        <h3 style="color:black">Where Shariah-Compliance Meets Impact Investing</h3>
+        <br>
+        <a href="#what-is-gold-igloo" class="btn btn-dark btn-lg js-scroll-trigger">Onward</a>
+      </div>
+    </header>
+
+
+<!-- What is Gold Igloo? -->
+    <section id="what-is-gold-igloo" class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2>How can we help you?</h2>
+
+            <hr class="small">
+            <p>At Gold Igloo, we help you find Shariah-Compliant companies that have a Social Impact.</p>
+            </br>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="#screening-for-compliance">
+                    <img class="img-portfolio img-fluid" src="img/islamic-mosque.jpg">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="#screening-for-impact">
+                    <img class="img-portfolio img-fluid" src="img/tree_in_glass.jpeg">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /.row (nested) -->
+          </div>
+          </br>
+          </br>
+          <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+<!-- How does Gold Igloo Work?-->
+    <section id="how-does-it-work" class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2>How Does Gold Igloo Work?</h2>
+          </br>
+          <div class="row">
+            <!-- Factor #1 -->
+            <div class="service-item">
+                <img class="img-reason img-fluid" src="img/Shariah_150.png">
+                <div class="button-text-1">
+                <strong>Shariah-Compliant <br> Stocks</strong><br>
+                We scan through <br>
+                thousands of stocks <br>
+                for Shariah-Compliance.
+                </div>
+            </div>
+            <!-- /.service-item-->
+            <!-- Factor #2 -->
+            <div class="service-item">
+              <img class="img-reason img-fluid" src="img/data_science.png">
+              <div class="button-text-1">
+              <strong>Powered By <br> Data Science</strong><br>
+              Stock hyperparameters <br>
+              are carefully determined.
+            </div>
+          </div>
+            <!-- /.service-item-->
+            <!-- Factor #3 -->
+            <div class="service-item">
+                <img class="img-reason img-fluid" src="img/social-impact.png">
+                <div class="button-text-1">
+                <strong>Social Impact <br> Rating</strong><br>
+                We evaluate every <br>
+                stock for it's <br>
+                social impact.
+                </div>
+            </div>
+            <!-- /.service-item-->
+          </div>
+          <!--/.row-->
+          </div>
+          <!-- /.col-lg-10 -->
+        </div>
+        <!--/.row-->
+      </div>
+      <!--/.container-->
+    </section>
+
+<section id="screening-for-impact" class="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="column-container">
+        <div class="column-2 chart">
+          <canvas id="myChart" width="500" height="300"></canvas>
+        </div>
+        <div class="column-1">
+          <h3><b>Assessing Companies For Social Impact</b></h3>
+          <p>Gold Igloo assesses companies for social impact by
+            following MSCI Sustainable Impact Metrics, which states that 50%
+            of sales must belong to a sustainable impact category.</p>
+            <div class="circle circle-one">
+              <span class="column-2-text">
+              <p>Climate Action</p>
+            </span>
+            </div>
+            <div class="circle circle-two">
+              <span class="column-2-text">
+              <p>Affordable and Clean Energy</p>
+            </span>
+            </div>
+            <div class="circle circle-three">
+              <span class="column-2-text">
+              <p>Responsible Consumption & Production</p>
+            </span>
+            </div>
+            <div class="circle circle-four">
+              <span class="column-2-text">
+              <p>Preserving Life on Land & Water</p>
+            </span>
+            </div>
+          </div>
+          <!-- /.column1-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How we screen for Shariah Compliance -->
+<section id="screening-for-compliance" class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="column-container">
+            <div class="column-1">
+              <h3><b>Screening for Shariah-Compliance</b></h3>
+              <p>In order to screen for Shariah-Compliance, Gold Igloo implements a
+                rigid screening process that involves 3 screening stages: Business activities, financial
+                debt and finally dividend purification.</p>
+              </div>
+              <!-- /.column1-->
+            <div class="column-2">
+              <div class="service-item-2 first">
+                <span class="column-2-text">
+                <h5>Business Activity</h5>
+                </span>
+              </div>
+              <div class="service-item-2 second">
+                <span class="column-2-text">
+                <p>Is this company involved in a prohibited activity?</p>
+                </span>
+              </div>
+              <div class="service-item-2 third">
+                <span class="column-2-text">
+                <p>Prohibited activities include tobacco, entertainment, alcohol, financial services
+                and gambling.</p>
+                </span>
+              </div>
+
+              <div class="service-item-2 first">
+                <span class="column-2-text">
+                <h5>Financial Screening Activity</h5>
+                </span>
+                  </div>
+                <div class="service-item-2 second">
+                  <span class="column-2-text">
+                  <p>Does this company have more than 33% debt over it's total assets</p>
+                  </span>
+                </div>
+                <div class="service-item-2 third">
+                  <span class="column-2-text">
+                  <p>Companies should not exceed 33.33% financial ratio in total debt over total assets.</p>
+                  </span>
+                </div>
+              <div class="service-item-2 first">
+                <span class="column-2-text">
+                <h5>Dividend Purification</h5>
+                </span>
+                </div>
+                <div class="service-item-2 second">
+                  <span class="column-2-text">
+                  <p>Has the company applied dividend purification?</p>
+                  </span>
+                </div>
+                <div class="service-item-3">
+                  Shariah-Compliant
+                </div>
+            </div>
+            <!--/.column2-->
+      </div>
+      <!--/.column-container-->
+    </div>
+      <!--/.row-->
+    </div>
+    <!-- /.container-->
+  </section>
+  <!-- /.container-->
+
+<div class="Decide-which-industries">
+<center>
+  <a href="#categories" class="btn btn-dark">Decide which industries to invest in</a>
+</center>
+</div>
+    <!-- Callout-overview -->
+    <aside class="callout overview">
+      <div class="text-vertical-center">
+        <h1>Shariah-Compliant Impact Investments</h1>
+      </div>
+    </aside>
+    <!-- Shariah-Compliant and Impact Investing Only Dashboard -->
+    <section class="about">
+      <div class="container text-center">
+        <h2>Overview Of Shariah-Compliant Companies with Social Impact</h2>
+        <p class="lead">
+          <a href="#categories">Back to  Categories</a>.</p>
+          <!-- Dashboard-1 -->
+        <div class='tableauPlaceholder' id='viz1527983014731' style='position: relative'><noscript><a href='#'><img alt='Overview of search&#47;ticker&#47;market cap ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvesting&#47;Overviewofsearchtickermarketcap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='shariahimpactInvesting&#47;Overviewofsearchtickermarketcap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvesting&#47;Overviewofsearchtickermarketcap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1527983014731');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      <!-- /.container -->
+    </section>
+
+    <!-- Different industries -->
+        <section id="categories" class="services bg-primary text-white">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-lg-10 mx-auto">
+                <h2>Categories</h2>
+                <hr class="small">
+                <div class="row">
+                  <!-- Different sectors -->
+                  <!-- /.service-item-consumer-discretionary -->
+                    <div class="service-item">
+                      <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-car fa-stack-1x text-primary"></i>
+                      </span>
+                      <div class="button-text-2">
+                        <strong>Consumer <br> Discretionary</strong>
+                      </div>
+                      <a href="#consumer-discretionary" class="btn btn-light">Learn More</a>
+                    </div>
+                    <!-- /.service-item -->
+                      <div class="service-item">
+                        <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fas fa-utensils fa-stack-1x text-primary"></i>
+                        </span>
+                        <div class="button-text-2">
+                          <!-- consumer staples -->
+                          <strong>Consumer <br> Staples</strong>
+                        </div>
+                        <a href="#consumer-staples" class="btn btn-light">Learn More</a>
+                      </div>
+                  <!-- /.service-item -->
+                    <div class="service-item">
+                      <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-bolt fa-stack-1x text-primary"></i>
+                      </span>
+                      <div class="button-text-2">
+                        <!-- energy -->
+                        <strong>Energy <br> </br></strong>
+                      </div>
+                      <a href="#energy" class="btn btn-light">Learn More</a>
+                    </div>
+                    <!-- /.service-item-healthcare -->
+                      <div class="service-item">
+                        <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fas fa-briefcase-medical fa-stack-1x text-primary"></i>
+                        </span>
+                        <div class="button-text-2">
+                        <!-- healthcare -->
+                          <strong>Healthcare<br> </br></strong>
+                        </div>
+                        <a href="#healthcare" class="btn btn-light">Learn More</a>
+                      </div>
+                    <!-- /.service-item-industrials -->
+                      <div class="service-item">
+                        <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fas fa-industry fa-stack-1x text-primary"></i>
+                        </span>
+                        <div class="button-text-2">
+                          <!-- industrials -->
+                          <strong>Industrials<br></br></strong>
+                        </div>
+                        <a href="#industrials" class="btn btn-light">Learn More</a>
+                      </div>
+                  <!-- /.service-item -->
+                    <div class="service-item">
+                      <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-mobile-alt fa-stack-1x text-primary"></i>
+                      </span>
+                      <div class="button-text-2">
+                        <strong>Information<br>Technology<br> </br></strong>
+                      </div>
+                      <a href="#information-technology" class="btn btn-light">Learn More</a>
+                    </div>
+                    <!-- /.service-item -->
+                    <div class="service-item">
+                      <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-graduation-cap fa-stack-1x text-primary"></i>
+                      </span>
+                      <div class="button-text-2">
+                        <!-- real estate -->
+                        <strong>Real<br>Estate</strong>
+                      </div>
+                      <a href="#real-estate" class="btn btn-light">Learn More</a>
+                    </div>
+                  <!-- /.service-item -->
+                </div>
+                <!-- /.row (nested) -->
+              </div>
+              <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </section>
+
+    <!-- Callout-consumer-discretionary -->
+    <aside id="consumer-discretionary" class="callout consumer-discretionary">
+      <div class="text-vertical-center">
+        <h1>Consumer Discretionary</h1>
+      </div>
+    </aside>
+    <!-- Dashboard (Consumer Discretionary) -->
+    <section class="about">
+      <div class="container text-center">
+        <h2>Consumer Discretionary </h2>
+        <p class="lead">
+          <a href="#categories">Back to  Categories</a>.</p>
+          <!-- Dashboard-1 -->
+          <div class='tableauPlaceholder' id='viz1527989296877' style='position: relative'><noscript><a href='#'><img alt='Consumer Discretionary Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvestingDetailedView&#47;ConsumerDiscretionaryDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='shariahimpactInvestingDetailedView&#47;ConsumerDiscretionaryDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvestingDetailedView&#47;ConsumerDiscretionaryDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1527989296877');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+    </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Callout-consumer-staples -->
+    <aside id="consumer-staples" class="callout consumer-staples">
+      <div class="text-vertical-center">
+        <h1>Consumer Staples</h1>
+      </div>
+    </aside>
+    <!-- Dashboard (Consumer Staples)-->
+    <section  class="about">
+      <div class="container text-center">
+        <h2>Consumer Staples</h2>
+        <p class="lead">
+          <a href="#categories">Back to  Categories</a>.</p>
+          <!-- Dashboard-1 -->
+          <div class='tableauPlaceholder' id='viz1527989246226' style='position: relative'><noscript><a href='#'><img alt='Consumer Staples Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvestingDetailedView&#47;ConsumerStaplesDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='shariahimpactInvestingDetailedView&#47;ConsumerStaplesDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvestingDetailedView&#47;ConsumerStaplesDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1527989246226');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+    </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Callout-energy -->
+    <aside id="energy" class="callout energy">
+      <div class="text-vertical-center">
+        <h1>Energy</h1>
+      </div>
+    </aside>
+    <!-- Dashboard (Energy)-->
+    <section class="about">
+      <div class="container text-center">
+        <h2>Energy</h2>
+        <p class="lead">
+          <a href="#categories">Back to  Categories</a>.</p>
+          <!-- Dashboard-1 -->
+          <div class='tableauPlaceholder' id='viz1527989197260' style='position: relative'><noscript><a href='#'><img alt='Energy Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvestingDetailedView&#47;EnergyDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='shariahimpactInvestingDetailedView&#47;EnergyDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvestingDetailedView&#47;EnergyDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1527989197260');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+    </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Callout-healthcare -->
+    <aside id="healthcare" class="callout healthcare">
+      <div class="text-vertical-center">
+        <h1>Healthcare</h1>
+      </div>
+    </aside>
+    <!-- Dashboard 4 (Healthcare)-->
+    <section  class="about">
+      <div class="container text-center">
+        <h2>Healthcare</h2>
+        <p class="lead">
+          <a href="#categories">Back to  Categories</a>.</p>
+          <!-- Dashboard-1 -->
+          <div class='tableauPlaceholder' id='viz1527989076027' style='position: relative'><noscript><a href='#'><img alt='HealthCare Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvestingDetailedView&#47;HealthCareDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='shariahimpactInvestingDetailedView&#47;HealthCareDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvestingDetailedView&#47;HealthCareDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1527989076027');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+    </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Callout-industrials -->
+    <aside id="industrials" class="callout industrials">
+      <div class="text-vertical-center">
+        <h1>Industrials</h1>
+      </div>
+    </aside>
+    <!-- Dashboard (Industrials) -->
+    <section class="about">
+      <div class="container text-center">
+        <h2>Industrials</h2>
+        <p class="lead">
+          <a href="#categories">Back to  Categories</a>.</p>
+          <!-- Dashboard-1 -->
+          <div class='tableauPlaceholder' id='viz1527988983718' style='position: relative'><noscript><a href='#'><img alt='Industrials Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvestingDetailedView&#47;IndustrialsDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='shariahimpactInvestingDetailedView&#47;IndustrialsDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvestingDetailedView&#47;IndustrialsDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1527988983718');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+    </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Callout-information-technology -->
+    <aside id="information-technology" class="callout information-technology">
+      <div class="text-vertical-center">
+        <h1>Information Technology</h1>
+      </div>
+    </aside>
+    <!-- Dashboard (Information Technology) -->
+    <section class="about">
+      <div class="container text-center">
+        <h2>Information Technology</h2>
+        <p class="lead">
+          <a href="#categories">Back to  Categories</a>.</p>
+
+          <!-- Dashboard-1 -->
+          <div class='tableauPlaceholder' id='viz1527988929050' style='position: relative'><noscript><a href='#'><img alt='Information Technology Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvestingDetailedView&#47;InformationTechnologyDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='shariahimpactInvestingDetailedView&#47;InformationTechnologyDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvestingDetailedView&#47;InformationTechnologyDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1527988929050');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+    </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Callout-real-estate -->
+    <aside id="real-estate" class="callout real-estate">
+      <div class="text-vertical-center">
+        <h1>Real Estate</h1>
+      </div>
+    </aside>
+    <!-- Dashboard (Real Estate) -->
+    <section class="about">
+      <div class="container text-center">
+        <h2>Real Estate</h2>
+        <p class="lead">
+          <a href="#categories">Back to  Categories</a>.</p>
+          <!-- Dashboard-1 -->
+          <div class='tableauPlaceholder' id='viz1527988600421' style='position: relative'><noscript><a href='#'><img alt='Real Estate Overview ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvestingDetailedView&#47;RealEstateOverview&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='shariahimpactInvestingDetailedView&#47;RealEstateOverview' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sh&#47;shariahimpactInvestingDetailedView&#47;RealEstateOverview&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1527988600421');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+          <!-- Dashboard-1 -->
+      </div>
+    </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Callout-final -->
+    <aside class="callout" id="contact">
+      <div class="text-vertical-center">
+        <h1>Looking for more great analytics?</h1>
+      </div>
+    </aside>
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary text-white">
+      <div class="container text-center">
+        <h3>Here at Gold Igloo, we are committed to making Shariah-Compliant Impact Investing easy for you.</h3>
+        <a href="#" class="btn btn-lg btn-light">Give us Feedback!</a>
+        <a href="#" class="btn btn-lg btn-dark">Contact Us!</a>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h4>
+              <strong>Gold Igloo</strong>
+            </h4>
+            <p>Shariah-Compliant Impact Investing
+
+            <hr class="small">
+            <p class="text-muted">Copyright &copy; Gold Igloo 2018</p>
+          </div>
+        </div>
+      </div>
+      <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+        <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+      </a>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
+    <!-- chart.js -->
+    <script src="js/chart-js.js"></script>
+  </body>
+
+</html>
