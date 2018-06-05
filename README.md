@@ -1,4 +1,4 @@
-# iceigloo - "prototype description"
+# GoldIgloo - "prototype description"
 where shariah investing meets impact investing
 ---
 what is Ice Igloo all about?
